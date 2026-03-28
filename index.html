@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exposé : La Révolution ChatGPT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-overlay">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="Logo ChatGPT" class="header-logo">
+            <h1>La Révolution ChatGPT</h1>
+            <p class="subtitle">Par Rayane, Selim et Antoine</p>
+            <div class="header-decoration"></div>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section class="cards-grid">
+            
+            <div class="card" onclick="openModal('intro-modal')">
+                <div class="card-icon">📖</div>
+                <h3>1. Introduction et Histoire</h3>
+                <p>Découvrez les origines d'OpenAI et l'ascension fulgurante de l'IA.</p>
+                <span class="card-btn">Lire la suite</span>
+            </div>
+
+            <div class="card" onclick="openModal('tech-modal')">
+                <div class="card-icon">⚙️</div>
+                <h3>2. Fonctionnement technique</h3>
+                <p>Comprendre l'architecture Transformer et le calcul statistique.</p>
+                <span class="card-btn">Explorer</span>
+            </div>
+
+            <div class="card" onclick="openModal('stats-modal')">
+                <div class="card-icon">📊</div>
+                <h3>3. Statistiques Clés</h3>
+                <p>Les chiffres records : utilisateurs, puissance et environnement.</p>
+                <span class="card-btn">Voir les chiffres</span>
+            </div>
+
+            <div class="card" onclick="openModal('limites-modal')">
+                <div class="card-icon">🔍</div>
+                <h3>4. Limites et Apprentissage</h3>
+                <p>Hallucinations, triche et l'art de bien prompter.</p>
+                <span class="card-btn">Détails</span>
+            </div>
+
+            <div class="card" onclick="openModal('enjeux-modal')">
+                <div class="card-icon">🛡️</div>
+                <h3>5. Enjeux et Éthique</h3>
+                <p>L'impact sur la société, le travail et l'environnement.</p>
+                <span class="card-btn">S'informer</span>
+            </div>
+
+            <div class="card quiz-card" onclick="openModal('quiz-modal')">
+                <div class="card-icon">❓</div>
+                <h3>Quiz Interactif</h3>
+                <p>Testez vos connaissances sur l'intelligence artificielle !</p>
+                <span class="card-btn">Lancer le défi</span>
+            </div>
+
+        </section>
+
+        <!-- MODALE 1 : INTRODUCTION -->
+        <div id="intro-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('intro-modal')">&times;</span>
+                <h2 class="modal-title">1. Introduction et Histoire</h2>
+                <div class="modal-body">
+                    <img src="https://images.unsplash.com/photo-1677442d019cecf8e2a4f5d719ecc6007d64347b7eeed50c3e49c5ecf70e482b?w=800&q=80" class="feature-img" alt="ChatGPT Interface">
+                    
+                    <h3>La Naissance d'une Révolution</h3>
+                    <p>ChatGPT est un modèle de langage révolutionnaire lancé le <strong>30 novembre 2022</strong> par OpenAI. En seulement <strong>deux mois</strong>, il a atteint les <strong>100 millions d'utilisateurs</strong>, une première mondiale qui marque un tournant dans l'histoire de la technologie.</p>
+
+                    <p>Cette croissance exponentielle surpasse celle de tous les services numériques précédents. Netflix a mis 10 ans, Instagram 2,5 ans, et TikTok 9 mois pour atteindre ce même cap. ChatGPT a explosé tous les records en exploitant le potentiel incommensurable des modèles de langage de grande taille.</p>
+
+                    <h3>OpenAI : Des Débuts Modestes à la Domination Mondiale</h3>
+                    <p>Fondée en 2015 par Sam Altman, Greg Brockman et Elon Musk (fondateur de Tesla et SpaceX), la société <strong>OpenAI</strong> avait une mission claire : rendre l'intelligence artificielle accessible et bénéfique pour l'humanité. À l'origine, c'était un laboratoire de recherche fondamentale, mais le projet a rapidement évolué.</p>
+
+                    <p>Le parcours n'a pas été linéaire. OpenAI a commencé avec des modèles GPT-1 et GPT-2, révolutionnaires mais encore limités. Puis est venu GPT-3 en 2020, avec ses <strong>175 milliards de paramètres</strong>, capable de générer du texte d'une qualité stupéfiante. Mais c'est avec ChatGPT, basé sur GPT-3.5 et affiné par l'apprentissage par renforcement (RLHF), que tout a changé.</p>
+
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f70504504?w=800&q=80" class="feature-img" alt="Équipe OpenAI">
+
+                    <h3>L'Impact Socio-Économique</h3>
+                    <p>L'arrivée de ChatGPT a transformé le paysage technologique. Les entreprises rivales comme Google, Microsoft, Meta et Amazon ont lancé leurs propres alternatives. Microsoft a investi <strong>10 milliards de dollars</strong> dans OpenAI, propulsant l'entreprise au statut de « licorne » d'une valeur de 80 milliards de dollars.</p>
+
+                    <p>Cette révolution ne se limite pas à la technologie. Elle affecte l'éducation, le journalisme, la programmation informatique et des dizaines d'autres secteurs. Les étudiants l'utilisent pour leurs devoirs, les développeurs pour coder plus rapidement, et les chercheurs pour explorer de nouvelles frontières scientifiques.</p>
+
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/oQpfXFB9AKs" frameborder="0" allowfullscreen></iframe>
+                    </div>
+
+                    <h3>Pourquoi Maintenant ?</h3>
+                    <p>L'ironie de l'histoire, c'est que l'architecture technique de ChatGPT n'est pas révolutionnaire. Le Transformer a été inventé en 2017. La question est : pourquoi cette explosion en 2022-2023 ? La réponse réside dans trois facteurs :</p>
+                    <ul style="color: var(--text-muted); line-height: 1.8; margin: 1.5rem 0;">
+                        <li><strong>✓ La puissance de calcul :</strong> Les GPU Nvidia et les serveurs cloud actuels peuvent entraîner et déployer des modèles géants.</li>
+                        <li><strong>✓ Les données massives :</strong> Internet contient maintenant suffisamment de texte pour entraîner des modèles de milliards de paramètres.</li>
+                        <li><strong>✓ L'interface utilisateur :</strong> ChatGPT est accessible, gratuit et facile à utiliser, contrairement aux recherches académiques antérieures.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODALE 2 : TECHNIQUE -->
+        <div id="tech-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('tech-modal')">&times;</span>
+                <h2 class="modal-title">2. Fonctionnement Technique</h2>
+                <div class="modal-body">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Transformer_full.png/500px-Transformer_full.png" class="feature-img" alt="Architecture Transformer">
+                    
+                    <h3>L'Architecture Transformer : La Clé du Succès</h3>
+                    <p>ChatGPT repose sur l'architecture <strong>Transformer</strong>, présentée en 2017 par Vaswani et al. dans l'article fondateur "Attention Is All You Need". Cette architecture révolutionne la façon dont les machines traitent le langage naturel.</p>
+
+                    <p>Contrairement aux réseaux de neurones récurrents (RNN) et LSTM traditionnels, le Transformer utilise un mécanisme appelé <strong>"Attention"</strong>. Ce mécanisme permet au modèle de peser l'importance relative de chaque mot dans une phrase, indépendamment de sa position. C'est comme si le modèle pouvait "regarder" simultanément tous les mots et comprendre leurs relations contextuelles.</p>
+
+                    <img src="https://images.unsplash.com/photo-1677442d019cecf8e2a4f5d719ecc6007d64347b7eeed50c3e49c5ecf70e482b?w=800&q=80" class="feature-img" alt="Neural Networks">
+
+                    <h3>Comment Fonctionne ChatGPT ?</h3>
+                    <p>ChatGPT ne "pense" pas au sens humain. Il utilise les probabilités pour deviner le mot suivant. Voici le processus simplifié :</p>
+
+                    <ol style="color: var(--text-muted); line-height: 2; margin: 1.5rem 0; padding-left: 2rem;">
+                        <li><strong>Tokenization :</strong> Votre message est divisé en "tokens" (morceaux de mots).</li>
+                        <li><strong>Embedding :</strong> Chaque token est converti en vecteur numérique représentant son sens.</li>
+                        <li><strong>Processing :</strong> Ces vecteurs passent à travers des centaines de couches du Transformer.</li>
+                        <li><strong>Attention :</strong> À chaque couche, le modèle pondère l'importance de chaque token par rapport aux autres.</li>
+                        <li><strong>Prédiction :</strong> Le modèle calcule les probabilités du prochain token et en sélectionne un.</li>
+                        <li><strong>Itération :</strong> Le processus se répète jusqu'à l'obtention d'une réponse complète.</li>
+                    </ol>
+
+                    <h3>Les Nombres Astronomiques Derrière</h3>
+                    <p>ChatGPT a été entraîné sur une infrastructure de serveurs géante utilisant des <strong>milliers de GPU Nvidia A100</strong>, permettant de traiter des téraoctets de données textuelles en un temps record. Voici quelques chiffres vertigineux :</p>
+
+                    <div class="stats-grid" style="margin: 2rem 0;">
+                        <div class="stat-box"><h4>175 Mds</h4><p>Paramètres (GPT-3)</p></div>
+                        <div class="stat-box"><h4>1.7 Tr</h4><p>Tokens d'entraînement</p></div>
+                        <div class="stat-box"><h4>Terabytes</h4><p>De données textuelles</p></div>
+                        <div class="stat-box"><h4>Mois</h4><p>d'entraînement continu</p></div>
+                    </div>
+
+                    <h3>Les Tokens : L'Unité de Base</h3>
+                    <p>Un <strong>token</strong> n'est pas un mot entier. C'est un fragment de texte. Par exemple, le mot "intelligence" pourrait être tokenisé en "intelli" + "gence". En moyenne, 1 mot = 1,3 token. ChatGPT a une limite de <strong>4,000 tokens</strong> par conversation (environ 3,000 mots).</p>
+
+                    <p>Chaque token coûte de l'argent et du temps de calcul. C'est pourquoi les réponses très longues sont moins efficaces sur le plan énergétique.</p>
+
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/7ell8KEbhJo" frameborder="0" allowfullscreen></iframe>
+                    </div>
+
+                    <h3>Les Trois Phases d'Entraînement</h3>
+                    <p><strong>1. Pré-entraînement (Pre-training) :</strong> Le modèle apprend à prédire le prochain mot en lisant des milliards de pages web, livres et articles. C'est l'apprentissage non supervisé où aucune étiquette humaine n'est nécessaire.</p>
+
+                    <p><strong>2. Instruction Fine-tuning :</strong> Le modèle est réajusté sur des exemples de haute qualité d'instructions et de réponses, curatés par des humains. Cela aide le modèle à mieux suivre les directives.</p>
+
+                    <p><strong>3. RLHF (Reinforcement Learning from Human Feedback) :</strong> C'est le secret. Des évaluateurs humains classent les réponses générées par le modèle de "mauvaise" à "excellente". Un autre modèle de récompense apprend à imiter ces évaluations, puis l'algorithme PPO (Proximal Policy Optimization) utilise ces récompenses pour optimiser les réponses futures.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODALE 3 : STATISTIQUES -->
+        <div id="stats-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('stats-modal')">&times;</span>
+                <h2 class="modal-title">3. Statistiques et Records</h2>
+                <div class="modal-body">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" class="feature-img" alt="Statistiques et Données">
+
+                    <h3>Les Chiffres Qui Font Sensation</h3>
+                    <div class="stats-grid">
+                        <div class="stat-box"><h4>5 Jours</h4><p>Pour atteindre 1 million d'utilisateurs</p></div>
+                        <div class="stat-box"><h4>175 Mds</h4><p>De paramètres pour GPT-3</p></div>
+                        <div class="stat-box"><h4>500 ml</h4><p>D'eau par 1000 conversations</p></div>
+                        <div class="stat-box"><h4>80 Mds $</h4><p>Valorisation d'OpenAI</p></div>
+                    </div>
+
+                    <h3>Adoption Mondiale vs Autres Services</h3>
+                    <p>ChatGPT détient un record incontestable en termes de vitesse d'adoption. Aucune application n'a jamais grandi aussi vite :</p>
+                    <table class="data-table">
+                        <thead><tr><th>Service</th><th>Temps pour 100M d'utilisateurs</th><th>Utilisateurs Actuels</th></tr></thead>
+                        <tbody>
+                            <tr><td>Netflix</td><td>10 ans</td><td>230M+</td></tr>
+                            <tr><td>Facebook</td><td>4,5 ans</td><td>3B+</td></tr>
+                            <tr><td>Instagram</td><td>2,5 ans</td><td>2B+</td></tr>
+                            <tr><td>TikTok</td><td>9 mois</td><td>1B+</td></tr>
+                            <tr class="highlight"><td><strong>ChatGPT</strong></td><td><strong>2 mois</strong></td><td><strong>100M+ (et croissant)</strong></td></tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Impact Économique et Investissements</h3>
+                    <p>L'argent afflue massivement dans le secteur de l'IA générative. Microsoft a investi <strong>10 milliards de dollars</strong> dans OpenAI, faisant de cette entreprise le plus grand bénéficiaire du boom de l'IA. Google, Amazon et Meta investissent également des milliards dans leurs propres modèles.</p>
+
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80" class="feature-img" alt="Investissements Technologiques">
+
+                    <h3>L'Empreinte Énergétique et Écologique</h3>
+                    <p>ChatGPT consomme <strong>énormément d'électricité</strong>. Une seule requête consomme environ <strong>0,43 Wh d'électricité</strong>, soit 9 fois plus qu'une recherche Google classique. Les centres de données d'OpenAI consomment des centaines de mégawatts continuellement.</p>
+
+                    <p>Pire encore, le refroidissement des serveurs requiert d'énormes quantités d'eau. On estime qu'une seule conversation avec ChatGPT "coûte" environ <strong>500 millilitres d'eau</strong> en termes de refroidissement du serveur. À l'échelle mondiale, c'est plusieurs milliards de litres par mois.</p>
+
+                    <h3>L'Argent Généré</h3>
+                    <p>OpenAI a lancé des API payantes et ChatGPT Premium (ChatGPT Plus) à <strong>20 dollars par mois</strong>. En 2024, OpenAI générait environ <strong>1 milliard de dollars de revenus annuels</strong>, ce qui est un exploit pour une entreprise fondée en 2015.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODALE 4 : LIMITES -->
+        <div id="limites-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('limites-modal')">&times;</span>
+                <h2 class="modal-title">4. Limites et Hallucinations</h2>
+                <div class="modal-body">
+                    <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=800&q=80" class="feature-img" alt="Limites de l'IA">
+
+                    <h3>Les Hallucinations : La Plus Grande Faiblesse</h3>
+                    <p>L'une des limites majeures est l'<strong>"hallucination"</strong>. C'est le terme téchnique pour décrire le moment où ChatGPT invente des faits avec une certitude absolue, comme s'il les savait réellement. Le modèle ne "sait" pas qu'il ne sait pas.</p>
+
+                    <p>Exemple concret : Si vous demandez à ChatGPT un article scientifique inventé, il générera une réponse crédible avec des auteurs fictifs, des années de publication fausses, et même des citations élaborées. Le danger ? L'utilisateur peut y croire et le citer comme source fiable.</p>
+
+                    <p>Techniquement, c'est parce que ChatGPT fonctionne par <strong>prédiction statistique du prochain token</strong>. Il ne "comprend" pas vraiment le sens. Il choisit simplement le mot le plus probable basé sur les motifs dans ses données d'entraînement. Quand il fait face à une question sans réponse claire, il génère un token plausible, puis construit dessus, menant à des inventions élaborées.</p>
+
+                    <h3>Autres Limites Majeures</h3>
+                    <ul style="color: var(--text-muted); line-height: 2; margin: 1.5rem 0; padding-left: 2rem;">
+                        <li><strong>✗ Pas d'accès à Internet :</strong> ChatGPT ne connaît que ce sur quoi il a été entraîné (données jusqu'à avril 2023).</li>
+                        <li><strong>✗ Pas de vraie compréhension :</strong> Il simule la compréhension mais ne "comprend" rien au sens profond.</li>
+                        <li><strong>✗ Biais dans les données :</strong> Entraîné sur Internet, ChatGPT reproduit les préjugés sexistes et racistes présents en ligne.</li>
+                        <li><strong>✗ Limite de tokens :</strong> Impossible de traiter des documents très longs (max ~4000 tokens).</li>
+                        <li><strong>✗ Incohérence :</strong> ChatGPT peut contredire ce qu'il a dit quelques tokens plus tôt.</li>
+                        <li><strong>✗ Pas de raisonnement mathématique :</strong> Mauvais pour les calculs complexes.</li>
+                    </ul>
+
+                    <h3>Prompt Engineering : L'Art de Bien Demander</h3>
+                    <p>Le <strong>Prompt Engineering</strong> est devenu une compétence recherchée. C'est l'art de rédiger des instructions précises et structurées pour obtenir les meilleures réponses de ChatGPT. Les bons prompts incluent :</p>
+
+                    <div style="background: rgba(16, 163, 127, 0.1); padding: 1.5rem; border-radius: 10px; margin: 1.5rem 0; border-left: 5px solid var(--primary);">
+                        <p><strong>✓ Contexte clair :</strong> "Tu es un expert en histoire française..."</p>
+                        <p><strong>✓ Spécificité :</strong> "Liste 10 événements clés du Moyen Âge avec dates"</p>
+                        <p><strong>✓ Format désiré :</strong> "Réponse en format JSON avec le champ 'événement', 'date', 'impact'"</p>
+                        <p><strong>✓ Ton :</strong> "Explique comme si tu parlais à un enfant de 10 ans"</p>
+                        <p><strong>✓ Feedback :</strong> "Ce n'est pas bon, essaie avec plus de détails"</p>
+                    </div>
+
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80" class="feature-img" alt="Prompt Engineering">
+
+                    <h3>L'Enjeu de la Triche à l'École</h3>
+                    <p>Les établissements scolaires s'inquiètent. ChatGPT peut générer des essais entiers, des solutions d'exercices mathématiques, et des résolutions de problèmes en secondes. Certains étudiants l'utilisent pour tricher.</p>
+
+                    <p>Cependant, plusieurs écoles commencent à voir ChatGPT comme un outil pédagogique. L'objectif n'est pas d'interdire mais d'enseigner aux étudiants comment l'utiliser <strong>éthiquement</strong> et <strong>créativement</strong>. Les enseignants peuvent utiliser des détecteurs d'IA ou des stratégies de test alternatif (présentations orales, débats, projets en classe).</p>
+
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/RKtR-lSOq2g" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODALE 5 : ENJEUX -->
+        <div id="enjeux-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('enjeux-modal')">&times;</span>
+                <h2 class="modal-title">5. Enjeux et Éthique</h2>
+                <div class="modal-body">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80" class="feature-img" alt="Éthique et Responsabilité">
+
+                    <h3>Impact sur l'Emploi : Une Révolution Professionnelle</h3>
+                    <p>ChatGPT menace des millions d'emplois dans le secteur de l'information, de la programmation et des services à la clientèle. Les analystes prévoient que <strong>300 millions d'emplois pourraient être affectés</strong> par l'automatisation via l'IA générative d'ici 2030.</p>
+
+                    <p>Cependant, l'histoire des technologies nous montre que les révolutions créent aussi de nouveaux emplois. La calculatrice a remplacé les comptables manuels, mais a créé des milliers d'emplois en informatique. ChatGPT crée déjà une demande pour :</p>
+
+                    <ul style="color: var(--text-muted); line-height: 1.8; margin: 1.5rem 0; padding-left: 2rem;">
+                        <li><strong>➤ Prompt Engineers :</strong> Spécialistes en conception de requêtes optimales</li>
+                        <li><strong>➤ AI Ethics Officers :</strong> Experts en responsabilité et éthique de l'IA</li>
+                        <li><strong>➤ AI Trainers :</strong> Humains qui affinent et améliorent les modèles</li>
+                        <li><strong>➤ AI Auditors :</strong> Vérification de la conformité et de la qualité</li>
+                    </ul>
+
+                    <h3>La Désinformation et les Deepfakes</h3>
+                    <p>ChatGPT combiné à des technologies de génération d'images (DALL-E) et de vidéos crée un risque massive de <strong>désinformation</strong>. Les gouvernements autoritaires pourraient utiliser ces outils pour :</p>
+
+                    <ol style="color: var(--text-muted); line-height: 1.8; margin: 1.5rem 0; padding-left: 2rem;">
+                        <li>Créer des faux articles de presse à grande échelle</li>
+                        <li>Générer des vidéos falsifiées de politiciens ("deepfakes")</li>
+                        <li>Créer des fausses preuves d'événements fictifs</li>
+                        <li>Manipuler l'opinion publique pendant les élections</li>
+                    </ol>
+
+                    <img src="https://images.unsplash.com/photo-1633356942259-e37a2d3f0b68?w=800&q=80" class="feature-img" alt="Fake News et Désinformation">
+
+                    <h3>Protection des Données et Confidentialité</h3>
+                    <p>Toute conversation avec ChatGPT est stockée par OpenAI. Bien que la politique de confidentialité affirme que les données ne sont pas utilisées pour entraîner le modèle (sauf consentement), cette collecte massive pose des questions :</p>
+
+                    <ul style="color: var(--text-muted); line-height: 1.8; margin: 1.5rem 0; padding-left: 2rem;">
+                        <li><strong>⚠ Cybersécurité :</strong> Un piratage d'OpenAI exposerait les conversations de millions d'utilisateurs</li>
+                        <li><strong>⚠ Surveillance gouvernementale :</strong> Les gouvernements peuvent exiger l'accès aux conversations</li>
+                        <li><strong>⚠ Données médicales/juridiques :</strong> Des informations sensibles pourraient être divulguées</li>
+                    </ul>
+
+                    <h3>L'Enjeu Écologique : Une Catastrophe Silencieuse</h3>
+                    <p>L'IA générative est <strong>extrêmement gourmande en énergie</strong>. Voici les chiffres alarmants :</p>
+
+                    <div class="stats-grid" style="margin: 2rem 0;">
+                        <div class="stat-box"><h4>0,43 Wh</h4><p>Par requête ChatGPT</p></div>
+                        <div class="stat-box"><h4>×9</h4><p>Plus qu'une recherche Google</p></div>
+                        <div class="stat-box"><h4>500 ml</h4><p>D'eau par conversation</p></div>
+                        <div class="stat-box"><h4>Mégawatts</h4><p>Consommés 24/7</p></div>
+                    </div>
+
+                    <p>Si une milliarde de conversations se produisaient mensuellement, cela équivaudrait à :</p>
+                    <ul style="color: var(--text-muted); line-height: 1.8; margin: 1.5rem 0; padding-left: 2rem;">
+                        <li>✗ <strong>430,000 MWh</strong> d'électricité (équivalent à la consommation annuelle de 40,000 ménages)</li>
+                        <li>✗ <strong>500 millions de litres d'eau</strong> (équivalent à 200 piscines olympiques)</li>
+                        <li>✗ <strong>200,000+ tonnes de CO2</strong> (équivalent à 40,000 voitures annuelles)</li>
+                    </ul>
+
+                    <h3>Les Biais Systémiques et la Discrimination</h3>
+                    <p>ChatGPT a été entraîné sur Internet, qui est rempli de biais sexistes et racistes. Le modèle reproduit ces biais :</p>
+
+                    <p><strong>Exemple 1 :</strong> Si vous demandez "Des images de PDG", le modèle génère en majorité des hommes blancs, reflétant le biais présent dans les données d'entraînement.</p>
+
+                    <p><strong>Exemple 2 :</strong> ChatGPT a une tendance à privilégier les perspectives occidentales et peut être insensible aux contextes culturels non-occidentaux.</p>
+
+                    <p><strong>Exemple 3 :</strong> Concernant les genres, les données montrent que ChatGPT utilise plus de termes positifs pour les hommes et négatifs pour les femmes dans certains contextes professionnels.</p>
+
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&q=80" class="feature-img" alt="Équité et Inclusion">
+
+                    <h3>Régulation et Cadre Légal</h3>
+                    <p>Les gouvernements commencent à réagir. L'Union Européenne a proposé l'<strong>AI Act</strong>, qui réglementera les systèmes d'IA de haute risque. Des questions légales cruciales se posent :</p>
+
+                    <ul style="color: var(--text-muted); line-height: 1.8; margin: 1.5rem 0; padding-left: 2rem;">
+                        <li><strong>❓ Responsabilité :</strong> Qui est responsable si ChatGPT donne des conseils nuisibles ?</li>
+                        <li><strong>❓ Droits d'auteur :</strong> ChatGPT a-t-il le droit d'utiliser les contenus d'auteurs sans permission ?</li>
+                        <li><strong>❓ Transparence :</strong> OpenAI doit-il révéler ses données d'entraînement ?</li>
+                        <li><strong>❓ Droit à l'oubli :</strong> Pouvez-vous demander à OpenAI d'oublier vos conversations ?</li>
+                    </ul>
+
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/S_8qM9vL7iQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODALE 6 : QUIZ -->
+        <div id="quiz-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('quiz-modal')">&times;</span>
+                <h2 class="modal-title">🎯 Quiz Interactif</h2>
+                
+                <div id="quiz-container">
+                    <div id="quiz-header">
+                        <p id="question">Prêt pour le test ?</p>
+                    </div>
+                    
+                    <div id="options-container">
+                        <!-- Les boutons de réponse seront générés ici par JavaScript -->
+                    </div>
+                    
+                    <div id="quiz-footer">
+                        <p id="score-display">Score: 0/9</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Exposé SNT - Rayane, Selim & Antoine. Projet réalisé avec passion.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
